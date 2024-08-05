@@ -1,0 +1,10 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --ntr: ntr;
+  --somicBold: somic-bold;
+  --somicMedium: somic-medium;
+  --somicRegular: somic-regular;
+}

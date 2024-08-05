@@ -1,0 +1,16 @@
+@font-face {
+  font-family: ntr;
+  src: url(../fonts/NTR-Regular.woff);
+}
+@font-face {
+  font-family: somic-bold;
+  src: url(../fonts/NTSomic-Bold.woff);
+}
+@font-face {
+  font-family: somic-medium;
+  src: url(../fonts/NTSomic-Medium.woff);
+}
+@font-face {
+  font-family: somic-regular;
+  src: url(../fonts/NTSomic-Regular.woff);
+}
