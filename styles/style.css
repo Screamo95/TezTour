@@ -616,3 +616,126 @@
     font-size: 32px;
   }
 }
+
+/* About */
+.about {
+  padding-bottom: 113px;
+  padding-top: 2px;
+}
+.about-title {
+  font-family: var(--somicMedium);
+  font-size: 52px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 16px;
+  letter-spacing: 0.2px;
+}
+.about-subtitle {
+  font-family: var(--somicMedium);
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #808b97;
+  margin-bottom: 85px;
+}
+.about__box {
+  display: grid;
+  grid-template-columns: 450px 520px 450px;
+  grid-template-rows: 320px 320px;
+  column-gap: 120px;
+  row-gap: 140px;
+  justify-content: center;
+  margin-bottom: 147px;
+}
+.about__item {
+  text-align: center;
+}
+.about__item-bg {
+  border-radius: 20px;
+  width: 74px;
+  height: 74px;
+  background: linear-gradient(180deg, #015bc1 0%, #00aeef 100%);
+  margin: 0 auto 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__item-bg_icon {
+  width: 32px;
+  height: 32px;
+}
+.about__item-name {
+  font-family: var(--somicBold);
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 29px;
+}
+.about__item-txt {
+  font-family: var(--somicRegular);
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: #000;
+}
+.about-btn {
+  border-radius: 16px;
+  width: 450px;
+  height: 100px;
+  background: linear-gradient(90deg, #005bbf 0%, #1cbbee 31.77%, #4abf5c 78.5%, #d6e42a 100%);
+  font-family: var(--somicMedium);
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1700px) {
+  .about__box {
+    grid-template-columns: repeat(2, 520px);
+    grid-template-rows: repeat(3, 320px);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__box {
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(3, 320px);
+    margin-bottom: 50px;
+  }
+  .about__item-name {
+    font-size: 18px;
+  }
+  .about__item-txt {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about__box {
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: 250px 300px 270px 320px 270px 320px;
+    row-gap: 30px;
+    margin-bottom: 10px;
+  }
+  .about-btn {
+    width: 280px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .about-subtitle {
+    font-family: var(--somicMedium);
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+}
