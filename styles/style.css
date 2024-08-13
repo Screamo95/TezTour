@@ -515,3 +515,104 @@
     display: none;
   }
 }
+
+/* Price */
+.price {
+  padding-top: 65px;
+  padding-bottom: 118px;
+}
+.price__container {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #f9f9fa;
+  border-radius: 40px;
+  padding-bottom: 65px;
+}
+.price-title {
+  font-family: var(--somicMedium);
+  font-size: 52px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  margin-bottom: 72px;
+  padding-top: 7px;
+  letter-spacing: 0.2px;
+}
+.price__box {
+  display: grid;
+  grid-template-columns: 385px 385px 385px 385px;
+  grid-template-rows: 334px 334px 334px;
+  column-gap: 75px;
+  row-gap: 16px;
+  justify-content: center;
+}
+.price__item {
+  width: 385px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+}
+.price__item-img {
+  width: 385px;
+  margin-bottom: 10px;
+}
+.price__item-name {
+  font-family: var(--somicMedium);
+  font-size: 30px;
+  line-height: 130%;
+  color: #000;
+  margin-bottom: 3px;
+}
+.price__item-link {
+  font-family: var(--somicRegular);
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #00aeef;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1850px) {
+  .price__box {
+    grid-template-columns: 385px 385px 385px;
+    grid-template-rows: 334px 334px 334px 334px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .price__box {
+    grid-template-columns: 385px 385px;
+    grid-template-rows: repeat(6, 334px);
+  }
+}
+@media screen and (max-width: 950px) {
+  .price__box {
+    grid-template-columns: 260px 260px;
+    grid-template-rows: repeat(6, 250px);
+  }
+  .price__item-img {
+    width: 260px;
+  }
+  .price__item {
+    width: 260px;
+  }
+  .price__item-name {
+    font-size: 24px;
+  }
+  .price__item-link {
+    font-size: 16px;
+  }
+  .price-title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .price__box {
+    grid-template-columns: 260px;
+    grid-template-rows: repeat(12, 250px);
+  }
+  .price-title {
+    font-size: 32px;
+  }
+}
