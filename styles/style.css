@@ -742,7 +742,7 @@
 
 /* Awards */
 .awards {
-  padding-bottom: 50px;
+  padding-bottom: 137px;
 }
 .awards-title {
   font-family: var(--somicMedium);
@@ -827,5 +827,126 @@
   }
   .awards-title {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .awards {
+    padding-bottom: 60px;
+  }
+}
+
+/* Office */
+.office {
+  padding-bottom: 197px;
+}
+.office__top {
+  width: 860px;
+  margin: 0 auto;
+  background-image: url(../img/office_120.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.office__top-img {
+  margin-top: 78px;
+  margin-bottom: 10px;
+}
+.office__top-title {
+  font-family: var(--somicMedium);
+  font-size: 52px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 22px;
+}
+.office__top-subtitle {
+  font-family: var(--somicMedium);
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #808b97;
+}
+.office__box {
+  display: flex;
+  overflow: hidden;
+}
+.office__box-img-1 {
+  margin-top: -44px;
+}
+.office__box-img-2 {
+  margin-left: -376px;
+  margin-top: -3px;
+}
+.office__box-img-3 {
+  margin-left: -377px;
+  margin-top: -53px;
+}
+.office__box-img-4 {
+  margin-left: -335px;
+  margin-top: 9px;
+}
+.office__box-img-5 {
+  margin-left: -365px;
+  margin-top: -64px;
+}
+.office__box-img-6 {
+  margin-left: -360px;
+  margin-top: 16px;
+  z-index: 10;
+}
+.office__box-img-7 {
+  margin-left: -295px;
+  margin-top: -25px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .office__top-title {
+    font-size: 30px;
+  }
+  .office__top-subtitle {
+    font-size: 20px;
+  }
+  .office__top {
+    width: 500px;
+    background-size: contain;
+  }
+  .office__box-img {
+    width: 130%;
+    margin-top: 50px;
+  }
+  .office__box-img-2 {
+    margin-left: -200px;
+  }
+  .office__box-img-3 {
+    margin-left: -200px;
+  }
+  .office__box-img-4 {
+    margin-left: -200px;
+  }
+  .office__box-img-5 {
+    margin-left: -200px;
+  }
+  .office__box-img-6 {
+    margin-left: -200px;
+    z-index: 1;
+  }
+  .office__box-img-7 {
+    margin-left: -150px;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 600px) {
+  .office__top-title {
+    font-size: 24px;
+  }
+  .office__top-subtitle {
+    font-size: 16px;
+  }
+  .office__top {
+    width: 280px;
+  }
+  .office {
+    padding-bottom: 50px;
   }
 }
