@@ -837,7 +837,7 @@
 
 /* Office */
 .office {
-  padding-bottom: 197px;
+  padding-bottom: 85px;
 }
 .office__top {
   width: 860px;
@@ -947,6 +947,140 @@
     width: 280px;
   }
   .office {
+    padding-bottom: 50px;
+  }
+}
+
+/* Test */
+.test {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.test__container {
+  border-radius: 40px;
+  background: #f9f9fa;
+  position: relative;
+  padding-bottom: 86px;
+}
+.test-title {
+  font-family: var(--somicMedium);
+  font-size: 52px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 47px;
+  padding-top: 36px;
+  position: relative;
+  z-index: 10;
+}
+.test-absolute {
+  position: absolute;
+  top: -169px;
+  left: 17px;
+  z-index: 1;
+}
+.test__body {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  max-height: 1250px;
+}
+.test__column {
+}
+.test__item {
+  border-radius: 20px;
+  width: 413px;
+  box-shadow: 0 4px 100px 0 rgba(239, 239, 239, 0.7);
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.test__inner {
+  border: 1px solid #f4f4fb;
+  border-radius: 16px;
+  width: 393px;
+  padding: 30px;
+  padding: 19px 30px 30px;
+}
+.test__people {
+  display: flex;
+  margin-bottom: 22px;
+  align-items: center;
+}
+.test__people-photo {
+  width: 56px;
+  height: 56px;
+}
+.test__people_info {
+  margin-left: 22px;
+}
+.test__people_info-name {
+  font-family: var(--ntr);
+  font-size: 20px;
+  line-height: 170%;
+  color: #000;
+}
+.test__people_stars {
+  display: flex;
+}
+.test__people_stars-star {
+  margin-right: 4px;
+}
+.test__people_stars-number {
+  font-family: var(--somicMedium);
+  font-size: 15px;
+  line-height: 160%;
+  color: #000;
+  margin-left: 9px;
+}
+.test__inner-txt {
+  font-family: var(--somicRegular);
+  font-size: 20px;
+  line-height: 160%;
+  color: #000;
+}
+
+@media screen and (max-width: 1350px) {
+  .test__body {
+    max-height: 2000px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 950px) {
+  .test__item {
+    width: 260px;
+  }
+  .test__inner {
+    width: 240px;
+    padding: 10px 10px;
+  }
+  .test__inner-txt {
+    font-size: 14px;
+  }
+  .test__body {
+    max-height: 1500px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .test-absolute {
+    display: none;
+  }
+  .test__body {
+    max-height: none;
+  }
+  .test-title {
+    font-size: 36px;
+  }
+  .test__item {
+    margin-bottom: 10px;
+  }
+  .test__container {
     padding-bottom: 50px;
   }
 }
